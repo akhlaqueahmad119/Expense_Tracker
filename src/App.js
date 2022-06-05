@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+ import React,{useState} from "react"
+ import Cart  from './component/Cart';
+ import object from './component/Object';
+ import Add from "./component/Add"
 import './App.css';
 
 function App() {
+  
+ 
+  const [objectt,Setobjectt] = useState(object)
+
+  // fetch('https://techgun.website/sample/api/read.php').then(
+  //   response => response.json()
+  // ).then(data => console.log(data))
+  
+  function returnfChild(haha){
+    const updatedobject = [haha,...objectt]
+    Setobjectt(updatedobject)
+    // console.log(updatedobject)
+  }
+  let arrforobject = objectt.map((ele)=>{
+    return(
+        <Cart info = {ele}/>
+    )
+  })
+  // console.log(arrforobject)
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className = "main">
+      <Add sendtoChild = {returnfChild} />
+      {arrforobject}
+      </div>
+      
+   
     </div>
   );
 }

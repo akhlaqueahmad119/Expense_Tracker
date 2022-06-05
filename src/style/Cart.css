@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    background-color:  #37475A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%; 
+    /* margin-top: 120px; */
+    margin-left: 185px;
+    margin-top: 8px;
+    
+    
+    margin-left: 190px;
+    
+     height: 80px; 
+    padding: 30px;
+    
+}
+.price{
+    margin-left: auto;
+    color: aliceblue;
+    background-color: rgb(46, 46, 75);
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid white;
+    border-radius: 10px;
+
+}
+.spend{
+    margin-left: 20px;
+    color: aliceblue;
+}
+.main{
+    margin: 100px; 
+     
+
+    
+}
+.tarikh{
+    background-color: black;
+    color: white;
+    width: 70px;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    padding: 5px;
+    outline: 1px solid white;
+    border-radius: 6px;
+}

@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.main-spend{
+    background-color: rgb(73, 64, 75);
+    height: 200px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 40px;
+  width: 70%; 
+    /* margin-top: 120px; */
+    margin-left: 190px;
+    position: relative;
+
+}
+.submit{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 200px;
+    margin-bottom: 25px;
+    
+}
+.submit-1{
+    width: 170px;
+    height: 30px;
+    font-weight: 900;
+    
+    background-color:rgb(160, 156, 161);
+    
+    
+}
+.main-amount{
+  margin-left: 158px;
+}
+.co-date{
+    width: 170px;
+    height: 21px;
+    outline: none;
+    border: 2px solid black;
+    font-weight: 500;
+    width: 170px;
+    height: 30px;
+    
+    font: 1em sans-serif;
+}
+.co-amount{
+    outline: none;
+    border: 2px solid black;
+    font-weight: 500;
+    width: 170px;
+    height: 30px;
+    
+    font: 1em sans-serif;
+}
+.co-title{
+    outline: none;
+    border: 2px solid black;
+
+    font-weight: 500;
+    width: 170px;
+    height: 30px;
+    
+    font: 1em sans-serif;
+    
+}
+.A-title{
+    font-weight: bolder ;
+}
+.A-date{
+    font-weight: bolder ;
+}
+.A-amount{
+    font-weight: bolder ;
+}
+
